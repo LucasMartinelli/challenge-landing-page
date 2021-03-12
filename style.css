@@ -1,0 +1,548 @@
+:root {
+   --Soft-Blue: hsl(231, 69%, 60%);
+   --Soft-Red: hsl(0, 94%, 66%);
+   --Grayish-Blue: hsl(229, 8%, 60%);
+   --Very-Dark-Blue: hsl(229, 31%, 21%);
+}
+/* -------------------------- GERAL -------------------------------------------------  */
+* {
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+p {
+   color: var(--Grayish-Blue);
+}
+/* -------------------------- BOTOES -------------------------------------------------  */
+.btn {
+   height: auto;
+   font-family: 'Rubik', sans-serif;
+   line-height:normal;
+   border-radius: 5px;
+   text-transform: none;
+   transition: all 150ms ease;
+}
+
+.btn-primary, .btn-primary:focus, .btn-primary:visited  {
+   background-color: var(--Soft-Blue);
+   border: 2px solid var(--Soft-Blue);
+   font-weight: 500;
+   font-size: 13.5px;
+   padding: 14px 22px;
+   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+   background-color: #FFF;
+   color: var(--Soft-Blue);
+   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-light, .btn-light:focus, .btn-light:visited {
+   background-color: #F7F7F7;
+   border: 2px solid #F7F7F7;
+   color: #55555F;
+   font-weight: 500;
+   font-size: 13.5px;
+   padding: 14px 22px;
+   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
+}
+
+.btn-light:hover {
+   background-color: #FFF;
+   border: 2px solid #55555F;
+   color: #55555F;
+   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-danger, .btn-danger:focus, .btn-danger:visited  {
+   background-color: var(--Soft-Red);
+   border: 2px solid var(--Soft-Red);
+   font-weight: 500;
+   font-size: 12px;
+   padding: 14px 22px;
+   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
+}
+
+.btn-danger:hover {
+   background-color: white;
+   font-weight: 500;
+   border: 2px solid var(--Soft-Red);
+   color: var(--Soft-Red);
+   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+/* -------------------------- NAVBAR -------------------------------------------------  */
+nav {
+   margin-top: 39px;
+   margin-bottom: 120px;
+   background: transparent;
+   box-shadow: none;
+   height: 40px;
+}
+
+nav .navbar-nav {
+   margin-top: -2px;
+}
+
+.nav-wrapper {
+   margin-left: 43px;
+   margin-right: 37px;
+}
+
+nav .nav-link {
+   font-family: 'Rubik';
+   font-weight: 500;
+   color: var(--Very-Dark-Blue);
+   text-transform: uppercase;
+   font-size: 13px;
+   letter-spacing: 1px;
+   transition: all 300ms ease;
+}
+
+nav .nav-link:hover {
+   color: var(--Soft-Red);
+   background: transparent;
+}
+
+nav .nav-item {
+   padding: 0 8px;
+}
+
+nav .nav-item:last-of-type {
+   padding-right: 0;
+   padding-left: 25px;
+}
+
+nav .btn-danger {
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   padding: 10px 30px;
+   margin-top: -5px;
+}
+/* -------------------------- HERO -------------------------------------------------  */
+.hero-col1 {
+   padding-left: 25px;
+   padding-right: 40px;
+}
+
+.hero-col1 h1 {
+   font-weight: 500;
+   color: var(--Very-Dark-Blue);
+   font-size: 3.2rem;
+   margin-bottom: 1.6rem;
+   margin-top: 4.8rem;
+   line-height: 3.5rem;
+}
+
+.hero-col1 p {
+   margin-bottom: 2.3rem;
+}
+
+.hero-col1 .btn-light {
+   margin-left: 16px;
+
+}
+
+.hero-col2 svg {
+   margin-top: -5px;
+   margin-right: -20px;
+}
+
+.blue-bg1 {
+   position: absolute;
+   height: 352px;
+   width: 38%;
+   border-top-left-radius: 176px;
+   border-bottom-left-radius: 176px;
+   top: 336px;
+   right: 0;
+   background-color: var(--Soft-Blue);
+   z-index: -1;
+}
+/* -------------------------- MAIN -------------------------------------------------  */
+main {
+   padding-top: 55px;
+}
+
+h2, .carousel.carousel-slider .carousel-item h2 {
+   font-weight: 500;
+   color: var(--Very-Dark-Blue);
+   font-size: 2.15rem;
+   margin-block-end: 1.75rem;
+}
+/* -------------------------- TABS -------------------------------------------------  */
+
+/* ------------- BG AZUL -------------  */
+.blue-bg2 {
+   position: absolute;
+   height: 352px;
+   width: 45.25%;
+   border-top-right-radius: 176px;
+   border-bottom-right-radius: 176px;
+   top: 1196px;
+   left: 0;
+   background-color: var(--Soft-Blue);
+   z-index: -1;
+}
+/* ------------- TABS -------------  */
+.tabs {
+   width: 730px;
+   height: 80px;
+   margin-top: 23px;
+   border-bottom: 1px solid #E0E0E8;
+}
+
+.tabs .tab {
+   height: 80px;
+   width: 33.3%;
+   line-height: 80px;
+}
+
+.tabs .tab a {
+   text-transform: none;
+   font-weight: 500;
+   color: var(--Grayish-Blue);
+   font-size: 17px;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+   background-color: transparent;
+}
+
+.tabs .tab a:hover {
+   color: var(--Soft-Red);
+}
+
+.tabs .tab a.active {
+   color: var(--Very-Dark-Blue);
+}
+
+.tabs .indicator {
+   background-color: var(--Soft-Red);
+   height: 4px;
+}
+/* ------------- DIV DAS TABS -------------  */
+element.style {
+    height: 500px;
+}
+
+#swipe-1, #swipe-2, #swipe-3 {
+   padding-top: 72px;
+   height: 500px;
+}
+
+div.col.s6.tab-col1 {
+   padding-left: 30px;
+}
+
+.illustration-features-tab-2, .illustration-features-tab-3 {
+   margin-left: 75px;
+}
+
+div.col.s6.tab-col2 {
+   padding-left: 110px;
+   padding-right: 20px;
+   padding-top: 30px;
+}
+
+.carousel.carousel-slider .carousel-item p {
+   font-size: 18px;
+   line-height: 1.8rem;
+   margin-bottom: 2.5rem;
+}
+/* -------------------------- DOWNLOADS -------------------------------------------------  */
+.download-title {
+   margin-top: 130px;
+}
+
+.download-cards {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 25px;
+}
+
+.card {
+   border-radius: 15px;
+   margin: 18px;
+   box-shadow: 0 15px 20px rgba(6, 17, 48, 0.08);
+   width: 280px;
+}
+
+.card:nth-of-type(1) {
+   margin-top: -70px;
+}
+
+.card:nth-of-type(3) {
+   margin-top: 88px;
+}
+
+.card .card-image, .card .card-content, .card .card-action {
+   background-color: transparent;
+}
+
+.card .card-image {
+   padding-top: 45px;
+}
+
+.card .card-content .card-title {
+   font-weight: 500;
+   color: var(--Very-Dark-Blue);
+   font-size: 1.35rem;
+   margin-top:-5px;
+   margin-block-end: 5px;
+}
+
+.card .card-content p {
+   font-size: 15px;
+   margin-block-end: 12px;
+}
+
+.card .dots {
+   width: 100%;
+   height: 4px;
+   background-image: url(/images/bg-dots.svg);
+}
+
+.card .card-action {
+   padding: 24px;
+   border: none;
+}
+
+.card .card-action .btn {
+   min-width: 100%;
+}
+
+/* -------------------------- FAQ -------------------------------------------------  */
+.faq-title {
+   margin-top: 105px;
+}
+
+.faq-title .col{
+   padding: 0 40px;
+}
+
+.faq-row .col{
+   padding: 13px 23px;
+}
+
+.collapsible {
+   box-shadow: none;
+   border:none;
+   border-bottom: 1px solid #DDD;
+   margin-bottom: 50px;
+}
+
+.collapsible li svg {
+   transition: 150ms all ease;
+   margin-right: 27px;
+}
+
+.collapsible li.active svg {
+  transform: rotate(180deg);
+}
+
+.collapsible li svg path {
+   transition: 150ms all ease;
+}
+
+.collapsible li.active svg path {
+   stroke: var(--Soft-Red);
+}
+
+.collapsible-header {
+   border: none;
+   border-top: 1px solid #DDD;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 0px;
+   
+}
+
+.keyboard-focused .collapsible-header:focus {
+   background-color: transparent;
+}
+
+.collapsible-header span {
+color: var(--Very-Dark-Blue);
+font-weight: 400;
+transition: 150ms all ease;
+}
+
+.collapsible-header:hover span {
+   color: var(--Soft-Red);
+}
+
+.collapsible-body {
+   border: none;
+   text-align: left;
+   padding: 10px 0 30px 0;
+}
+
+.collapsible-body span {
+   color: #555;
+   font-size: 1.1rem;
+   line-height: 2.5rem;
+}
+
+/* -------------------------- FOOTER -------------------------------------------------  */
+
+.footer-up {
+   background-color: var(--Soft-Blue);
+   margin-top: 136px;
+   padding-top: 55px;
+   height: 360px;
+}
+
+.footer-up .col {
+   padding: 0 60px;
+}
+
+.footer-up p {
+   color: white;
+   text-transform: uppercase;
+   font-size: 13px;
+   font-weight: 500;
+   letter-spacing: 0.33rem;
+}
+
+.footer-up h2 {
+   color: white;
+   line-height: 2.8rem;
+}
+
+.footer-up form {
+   display: flex;
+   justify-content: center;
+   align-items:flex-start;
+   margin-top: 30px;
+}
+
+.errorbox {
+   position:relative;
+   display: flex;
+   flex-direction: column;
+   padding: 0;
+   width:300px;
+   height: 70px;
+   background-color: var(--Soft-Red);
+   margin: 0 14px 0 0;
+   border-radius: 5px;
+   text-align: left;
+   visibility: hidden;
+}
+
+.input-error {
+   position:absolute;
+   right: 17px;
+   top: 13px;
+   z-index: 2;
+}
+
+.visible {
+   visibility: visible;
+}
+
+.footer-up input[type=email]:not(.browser-default) {
+   font-family: 'Rubik', sans-serif;
+   font-size: 14px;
+   width: auto;
+   height: 48px;
+   border: none;
+   background-color: white;
+   border-radius: 5px;
+   padding: 0 20px;
+   box-sizing: border-box;
+   transition: none;
+   margin: 0;
+   visibility: visible;
+   transition: 100ms ease all;
+}
+
+.add-border {
+   border: 3px solid var(--Soft-Red) !important;
+   transition: 100ms ease all;
+}
+
+.footer-up input[type=email]:focus:not(.browser-default):not([readonly]) {
+   box-shadow: none;
+}
+
+.errorbox span {
+   color: white;
+   font-size: 9px;
+   font-style: italic;
+   font-weight: 500;
+   margin-left: 10px;
+   line-height: 20px;
+   letter-spacing: 0.05rem;
+}
+
+.footer-up .btn-danger {
+   font-size: 13.5px;
+   height: 48px;
+   margin: 0;
+}
+
+.footer-down {
+   background-color: var(--Very-Dark-Blue);
+   height: 88px;
+}
+
+.footer-down .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: white;
+   height: 88px;
+   padding: 0 35px;
+}
+
+.footer-down-col1 {
+   display: flex;
+}
+
+.footer-down-col1 ul {
+    display: flex;
+    margin: 0;
+    margin-left: 40px;
+}
+
+.footer-down-col1 li {
+    text-transform: uppercase;
+    font-size: 12.5px;
+    letter-spacing: 0.1rem;
+    padding: 0 25px;
+    margin-top: 4px;
+}
+.footer-down-col2 {
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+}
+
+.footer-down .container a, .footer-down .container a:visited {
+   color: white;
+   transition: 150ms all ease;
+}
+
+.footer-down .container a:focus, .footer-down .container a:focus.active {
+   background-color: transparent;
+}
+
+.footer-down .container a:hover {
+   color: var(--Soft-Red);
+}
+
+.footer-down .container a svg path {
+   transition: 150ms all ease;
+}
+
+.footer-down-col2 a:hover svg path {
+   fill: var(--Soft-Red);
+}
