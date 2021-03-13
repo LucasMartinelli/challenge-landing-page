@@ -1,6 +1,9 @@
 const inputEmail = document.querySelector('.email');
 const errorBox = document.querySelector('.errorbox');
 
+const mobileMenu = document.querySelector('.mobile-menu');
+
+
 window.addEventListener("DOMContentLoaded", event => {
    const options = {
       duration: 100,
@@ -15,8 +18,21 @@ window.addEventListener("DOMContentLoaded", event => {
    const collapsible = document.querySelector('.collapsible');
    M.Collapsible.init(collapsible);
 
+   mobileMenu.style.display = "none";
 });
 
+
+
+function mobileNavShow() {
+   window.scrollTo(0, 0);
+   document.querySelector('body').style.overflowY = 'hidden';
+   mobileMenu.style.display = "block";
+}
+
+function mobileNavHide() {
+   document.querySelector('body').style.overflowY = 'scroll';
+   mobileMenu.style.display = "none";
+}
 
 
 function validate() {
