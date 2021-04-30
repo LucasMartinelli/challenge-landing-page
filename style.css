@@ -87,7 +87,6 @@ p {
    border: 2px solid var(--Soft-Red);
    font-weight: 500;
    font-size: 12px;
-   padding: 14px 22px;
    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
 }
 
@@ -142,7 +141,7 @@ nav .nav-item:last-of-type {
    padding-left: 25px;
 }
 
-nav .btn-danger {
+nav .btn-danger, nav .btn-danger:visited {
    text-transform: uppercase;
    letter-spacing: 2px;
    padding: 10px 30px;
@@ -832,6 +831,7 @@ transition: 150ms all ease;
 }
 
 .footer-up .btn-danger {
+   padding: 14px 22px;
    font-size: 13.5px;
    height: 48px;
    margin: 0;
